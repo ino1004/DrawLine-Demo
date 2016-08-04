@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wzz-UF-7Nb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wm-yk-eda">
+                                <rect key="frame" x="282" y="530" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FcU-0B-61o"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wlk-WF-glw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2Wm-yk-eda" secondAttribute="bottom" constant="40" id="A1f-Xc-uoB"/>
+                            <constraint firstAttribute="trailing" secondItem="Wzz-UF-7Nb" secondAttribute="trailing" id="BcK-7M-bHP"/>
+                            <constraint firstItem="wlk-WF-glw" firstAttribute="trailing" secondItem="Wzz-UF-7Nb" secondAttribute="trailing" id="FiR-jk-3r2"/>
+                            <constraint firstItem="wlk-WF-glw" firstAttribute="top" secondItem="Wzz-UF-7Nb" secondAttribute="top" id="U2g-8m-BVZ"/>
+                            <constraint firstItem="wlk-WF-glw" firstAttribute="leading" secondItem="Wzz-UF-7Nb" secondAttribute="leading" id="VmO-Ot-cwa"/>
+                            <constraint firstItem="wlk-WF-glw" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Wf4-mD-YgX"/>
+                            <constraint firstItem="Wzz-UF-7Nb" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="c74-a5-G7T"/>
+                            <constraint firstItem="Wzz-UF-7Nb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="j4t-L0-M3H"/>
+                            <constraint firstItem="2Wm-yk-eda" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rlu-Ja-avg"/>
+                            <constraint firstItem="Wzz-UF-7Nb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="u6I-gG-2cE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="drawImage" destination="wlk-WF-glw" id="jsh-OD-M5U"/>
+                        <outlet property="mainImage" destination="Wzz-UF-7Nb" id="hQd-67-srO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="310"/>
+        </scene>
+    </scenes>
+</document>
